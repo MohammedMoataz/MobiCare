@@ -1,0 +1,39 @@
+{
+  "name": "mobicare",
+  "version": "3.0.2",
+  "description": "Healthcare system",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "npm test test/*"
+  },
+  "author": "MobiCare Team",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-register": "^6.26.0"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.16.2",
+    "helmet": "^6.0.0",
+    "jsonwebtoken": "9.0.0",
+    "mysql2": "3.2.0",
+    "nodemon": "2.0.22",
+    "shortid": "^2.2.16",
+    "winston": "^3.8.2"
+  },
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omar-anas/GP_BE_ROSHETA.git"
+  },
+  "bugs": {
+    "url": "https://github.com/omar-anas/GP_BE_ROSHETA/issues"
+  },
+  "homepage": "https://github.com/omar-anas/GP_BE_ROSHETA#readme"
+}

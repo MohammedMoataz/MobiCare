@@ -1,0 +1,29 @@
+abstract class DoctorTimeReminderStates{}
+
+class InitiateDoctorTimeReminderState extends DoctorTimeReminderStates{}
+
+class CreateDoctorTimeDatabaseLoadingState extends DoctorTimeReminderStates{}
+
+class CreateDoctorTimeDatabaseSuccessState extends DoctorTimeReminderStates{}
+
+class CreateDoctorTimeDatabaseErrorState extends DoctorTimeReminderStates{}
+
+class ChangeDateTimeInDoctorState extends DoctorTimeReminderStates{}
+
+class InsertDoctorTimeDatabaseLoadingState extends DoctorTimeReminderStates{}
+
+class InsertDoctorTimeDatabaseSuccessState extends DoctorTimeReminderStates{}
+
+class InsertDoctorTimeDatabaseErrorState extends DoctorTimeReminderStates{}
+
+class GetAllDoctorTimeDatabaseLoadingState extends DoctorTimeReminderStates{}
+
+class GetAllDoctorTimeDatabaseSuccessState extends DoctorTimeReminderStates{}
+
+class GetAllDoctorTimeDatabaseErrorState extends DoctorTimeReminderStates{}
+
+class DeleteDoctorTimeDatabaseLoadingState extends DoctorTimeReminderStates{}
+
+class DeleteDoctorTimeDatabaseSuccessState extends DoctorTimeReminderStates{}
+
+class DeleteDoctorTimeDatabaseErrorState extends DoctorTimeReminderStates{}

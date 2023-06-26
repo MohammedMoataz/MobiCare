@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>155211948622-2jo2mb4bqbptskt85gr46n9qg96385b1.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.155211948622-2jo2mb4bqbptskt85gr46n9qg96385b1</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>155211948622-asfpv2eks0r68mgna1ljpv5bhh0g452s.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDtYiUWtrxDAIGieV73CfEBQ3FemvAuklM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>155211948622</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.mobiCare</string>
+	<key>PROJECT_ID</key>
+	<string>mobi-care-35b59</string>
+	<key>STORAGE_BUCKET</key>
+	<string>mobi-care-35b59.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:155211948622:ios:501c0025197fdbed54991f</string>
+</dict>
+</plist>

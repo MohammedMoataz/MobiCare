@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "155211948622",
+    "project_id": "mobi-care-35b59",
+    "storage_bucket": "mobi-care-35b59.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:155211948622:android:04dc8e33c6d93ffd54991f",
+        "android_client_info": {
+          "package_name": "com.example.mobi_care"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "155211948622-asfpv2eks0r68mgna1ljpv5bhh0g452s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mobi_care",
+            "certificate_hash": "91c54e120a8c65dc53d59adc1503359c21db3bfb"
+          }
+        },
+        {
+          "client_id": "155211948622-f01knrd1chh3cgoda2o7cpsd25idj49k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCM0SLg_0CE79bibQGui0sK9d2XQoWMlE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "155211948622-f01knrd1chh3cgoda2o7cpsd25idj49k.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "155211948622-2jo2mb4bqbptskt85gr46n9qg96385b1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.mobiCare"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

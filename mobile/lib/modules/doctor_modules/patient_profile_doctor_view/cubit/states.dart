@@ -1,0 +1,43 @@
+abstract class PatientProfileDoctorViewStates {}
+
+class PatientProfileDoctorViewInitiateState extends PatientProfileDoctorViewStates {}
+
+class PatientProfileDoctorViewChangePrescriptionContainerVisibility extends PatientProfileDoctorViewStates {}
+
+class PatientProfileDoctorViewChangeFollowUpWithContainerVisibility extends PatientProfileDoctorViewStates {}
+
+class PatientProfileDoctorViewChangeSymptomsContainerVisibility extends PatientProfileDoctorViewStates {}
+
+class PatientProfileDoctorViewChangeNotesContainerVisibility extends PatientProfileDoctorViewStates {}
+
+class AddNoteLoadingState extends PatientProfileDoctorViewStates {}
+
+class AddNoteSuccessfullyState extends PatientProfileDoctorViewStates {}
+
+class AddNoteErrorState extends PatientProfileDoctorViewStates {}
+
+class GetNoteLoadingState extends PatientProfileDoctorViewStates {}
+
+class GetNoteSuccessfullyState extends PatientProfileDoctorViewStates {}
+
+class GetNoteErrorState extends PatientProfileDoctorViewStates {}
+
+class GetNewAccessTokenLoadingState extends PatientProfileDoctorViewStates {}
+
+class GetNewAccessTokenSuccessfullyState extends PatientProfileDoctorViewStates {}
+
+class GetNewAccessTokenErrorState extends PatientProfileDoctorViewStates {}
+
+class GetDoctorPatientListLoadingState extends PatientProfileDoctorViewStates {}
+
+class GetSymptomsLoadingState extends PatientProfileDoctorViewStates {}
+
+class GetSymptomsSuccessfullyState extends PatientProfileDoctorViewStates {}
+
+class GetSymptomsErrorState extends PatientProfileDoctorViewStates {}
+
+class DoctorLayoutCreateChatSuccessState extends PatientProfileDoctorViewStates {}
+
+class DoctorLayoutCreateChatErrorState extends PatientProfileDoctorViewStates {}
+
+class DoctorLayoutCreateChatLoadingState extends PatientProfileDoctorViewStates {}

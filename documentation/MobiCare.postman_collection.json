@@ -1,0 +1,1598 @@
+{
+	"info": {
+		"_postman_id": "6c4e8ea1-a84a-404a-aceb-807cd2d9571c",
+		"name": "MobiCare",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27770023",
+		"_collection_link": "https://www.postman.com/martian-trinity-408362/workspace/mobicare/collection/23865080-6c4e8ea1-a84a-404a-aceb-807cd2d9571c?action=share&creator=27770023&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "AUTH",
+			"item": [
+				{
+					"name": "LOGIN",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"host": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "EMAIL",
+									"value": "DR.omar@mobicare.com",
+									"type": "text"
+								},
+								{
+									"key": "PASSWORD",
+									"value": "2541",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{localhost}}/login",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ADMIN LOGIN",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"host": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "EMAIL",
+									"value": "omar_anas61@yahoo.com",
+									"type": "text"
+								},
+								{
+									"key": "PASSWORD",
+									"value": "2541",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{localhost}}/admin/login",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"admin",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET NEW ACCESS TOKEN",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"host": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJRCI6OCwiUGF0aWVudF9FbWFpbF9WIjoiZ2VyZ2VzbWlsYWRAZ21haWwuY29tIiwicm9sZSI6IlBBVElFTlQiLCJpYXQiOjE2ODU4OTM5MDR9.wK8vAnjF6vOKR12HKHlRVo5RBP5yyL40eUOYBt2nUhI",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{localhost}}/token",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"token"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ADMIN",
+			"item": [
+				{
+					"name": "GET ALL DOCTORS",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{localhost}}/admin/doctor/getAll",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"admin",
+								"doctor",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EDIT DOCTOR",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"host": true
+						}
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "STATUS",
+									"value": "Active",
+									"type": "text"
+								},
+								{
+									"key": "DOCTOR_FIRST_NAME",
+									"value": "test1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "DOCTOR_LAST_NAME",
+									"value": "test5",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "DOCTOR_EMAIL",
+									"value": "mohammedmoataz@mobicare.com",
+									"type": "text"
+								},
+								{
+									"key": "ADDRESS",
+									"value": "test3",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "GENDER",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "DOB",
+									"value": "test3",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "SPECIALIZATION",
+									"value": "test3",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "PHONE",
+									"value": "01008581523",
+									"type": "text"
+								},
+								{
+									"key": "ADMIN_ID",
+									"value": "1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "Video",
+									"value": "asldmalksdmwsacsfefqefeqfqeqfefeqfefqefeqfeqfeqfeqfeqqeeqeqrdsfs",
+									"type": "text"
+								},
+								{
+									"key": "DOCTOR_PASSWORD",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "FUID",
+									"value": "a5a13c651c65e1651d532d153a1c5665a156b1b685a",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{localhost}}/admin/doctor/edit/23",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"admin",
+								"doctor",
+								"edit",
+								"23"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ADD NEW DOCTOR",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"host": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "DOCTOR_FIRST_NAME",
+									"value": "Fares",
+									"type": "text"
+								},
+								{
+									"key": "DOCTOR_LAST_NAME",
+									"value": "Hesham",
+									"type": "text"
+								},
+								{
+									"key": "DOCTOR_EMAIL",
+									"value": "fareshesham@mobicare.com",
+									"type": "text"
+								},
+								{
+									"key": "ADDRESS",
+									"value": "Fostat",
+									"type": "text"
+								},
+								{
+									"key": "GENDER",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "DOB",
+									"value": "2000-01-01",
+									"type": "text"
+								},
+								{
+									"key": "SPECIALIZATION",
+									"value": "Bones",
+									"type": "text"
+								},
+								{
+									"key": "PHONE",
+									"value": "01234567890",
+									"type": "text"
+								},
+								{
+									"key": "ADMIN_ID",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "DOCTOR_PASSWORD",
+									"value": "123456789",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{localhost}}/admin/doctor/add",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"admin",
+								"doctor",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET ALL PATIENTS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/admin/patient/getAll",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"admin",
+								"patient",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EDIT PATIENT",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"host": true
+						}
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "STATUS",
+									"value": "Active",
+									"type": "text"
+								},
+								{
+									"key": "PATIENT_FIRST_NAME",
+									"value": "Aman",
+									"type": "text"
+								},
+								{
+									"key": "PATIENT_LAST_NAME",
+									"value": "Mohammed",
+									"type": "text"
+								},
+								{
+									"key": "PATIENT_EMAIL",
+									"value": "amanmohammed@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "PATIENT_PASSWORD",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "PATIENT_ADDRESS",
+									"value": "Giza, Egypt",
+									"type": "text"
+								},
+								{
+									"key": "DOB",
+									"value": "1-1-2000",
+									"type": "text"
+								},
+								{
+									"key": "PATIENT_GENDER",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "PATIENT_WEIGHT",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "PATIENT_HEIGHT",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "FUID",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{localhost}}/admin/patient/edit/2",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"admin",
+								"patient",
+								"edit",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJRCI6MiwiQWRtaW5fRW1haWxfViI6Im9tYXJfYW5hczYxQHlhaG9vLmNvbSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY4NjQwNjU2OSwiZXhwIjoxNjg2NDMxNzY5fQ.5cMDeI0KV5Q4VIb0b0p4-I8mo5QB4sGPvEExaJURt3M",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "DOCTOR",
+			"item": [
+				{
+					"name": "ADD NOTE TO PATIENT",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"host": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"DOCTOR_ID\": 19,\r\n    \"PATIENT_ID\": 2,\r\n    \"NOTE\": \"note onrea\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/doctor/addNote",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"doctor",
+								"addNote"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ADD VIDEO",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"host": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "VIDEO_URL",
+									"value": "https://youtu.be/uOcpsXMJcJk",
+									"type": "text"
+								},
+								{
+									"key": "VIDEO_DESC",
+									"value": "best video about medicines",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{localhost}}/doctor/addVideo",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"doctor",
+								"addVideo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EDIT DOCTOR Profile",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"host": true
+						}
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "STATUS",
+									"value": "Disabled",
+									"type": "text"
+								},
+								{
+									"key": "DOCTOR_FIRST_NAME",
+									"value": "omar",
+									"type": "text"
+								},
+								{
+									"key": "DOCTOR_LAST_NAME",
+									"value": "anas",
+									"type": "text"
+								},
+								{
+									"key": "DOCTOR_EMAIL",
+									"value": "DR.omar_anas@mobicare.com",
+									"type": "text"
+								},
+								{
+									"key": "ADDRESS",
+									"value": "test3",
+									"type": "text"
+								},
+								{
+									"key": "GENDER",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "DOB",
+									"value": "test3",
+									"type": "text"
+								},
+								{
+									"key": "SPECIALIZATION",
+									"value": "test3",
+									"type": "text"
+								},
+								{
+									"key": "PHONE",
+									"value": "0138141681",
+									"type": "text"
+								},
+								{
+									"key": "ADMIN_ID",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "VIDEO",
+									"value": "asldmalksdmw",
+									"type": "text"
+								},
+								{
+									"key": "DOCTOR_PASSWORD",
+									"value": "2541",
+									"type": "text"
+								},
+								{
+									"key": "FUID",
+									"value": "lyblj,",
+									"type": "text"
+								},
+								{
+									"key": "BIO",
+									"value": "ytfjytvjytvytv",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{localhost}}/doctor/editProfile",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"doctor",
+								"editProfile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EDIT PATIENT  NOTE",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"host": true
+						}
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "NOTE_ID",
+									"value": "14",
+									"type": "text"
+								},
+								{
+									"key": "DOCTOR_ID",
+									"value": "19",
+									"type": "text"
+								},
+								{
+									"key": "PATIENT_ID",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "NOTE",
+									"value": "this is testing note111157",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{localhost}}/doctor/editNote",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"doctor",
+								"editNote"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EDIT DOCTOR VIDEO",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"host": true
+						}
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "VIDEO_ID",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "VIDEO_URL",
+									"value": "https://youtu.be/ERfTJLO5St8",
+									"type": "text"
+								},
+								{
+									"key": "VIDEO_DESC",
+									"value": "THAT WAS BEST VIDEO",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{localhost}}/doctor/editVideo",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"doctor",
+								"editVideo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add FUID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "19",
+									"type": "text"
+								},
+								{
+									"key": "fuid",
+									"value": "a531c35e1532c1d53d15b1e561c032a5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{localhost}}/doctor/fuid/add",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"doctor",
+								"fuid",
+								"add"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "19",
+									"disabled": true
+								},
+								{
+									"key": "fuid",
+									"value": "a6456a1c561c86e1868e1d6516515665db15c1651e51",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Doctor Profile",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"host": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/doctor/get/21",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"doctor",
+								"get",
+								"21"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET PATIENT  NOTE",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"host": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{localhost}}/doctor/getNote?DOCTOR_ID=19&PATIENT_ID=2",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"doctor",
+								"getNote"
+							],
+							"query": [
+								{
+									"key": "DOCTOR_ID",
+									"value": "19"
+								},
+								{
+									"key": "PATIENT_ID",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET DOCTOR VIDEOS",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"host": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{localhost}}/doctor/getVideo/21",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"doctor",
+								"getVideo",
+								"21"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET MY UPLOADED VIDEOS",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"host": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{localhost}}/doctor/getVideo/29",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"doctor",
+								"getVideo",
+								"29"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET ALL VIDEOS",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"host": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/doctor/getAllVideos/",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"doctor",
+								"getAllVideos",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE DOCTOR VIDEO",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"host": true
+						}
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{localhost}}/doctor/delVideo/4",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"doctor",
+								"delVideo",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE PATIENT  NOTE",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"host": true
+						}
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "DOCTOR_ID",
+									"value": "19",
+									"type": "text"
+								},
+								{
+									"key": "PATIENT_ID",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{localhost}}/doctor/delNote",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"doctor",
+								"delNote"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJRCI6MjgsIkRvY3Rvcl9FbWFpbF9WIjoiZmFyZXNoZXNoYW1AbW9iaWNhcmUuY29tIiwicm9sZSI6IkRPQ1RPUiIsImlhdCI6MTY4NjU5OTg5MywiZXhwIjoxNjg2NjI1MDkzfQ.NAZkSUn_Xu7pdY418jYn2aC7g0731j-5sTHhg1APAF8",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "DOCTOR PATION REL",
+			"item": [
+				{
+					"name": "SEARCH DOCTOR",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"host": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/doctor/search?FN=Mohammed",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"doctor",
+								"search"
+							],
+							"query": [
+								{
+									"key": "FN",
+									"value": "Mohammed"
+								},
+								{
+									"key": "LN",
+									"value": "test5",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SEARCH DOCTOR PATIENTS BY NAME",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"host": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJRCI6MjgsIkRvY3Rvcl9FbWFpbF9WIjoiZmFyZXNoZXNoYW1AbW9iaWNhcmUuY29tIiwicm9sZSI6IkRPQ1RPUiIsImlhdCI6MTY4NjE1MDcxMywiZXhwIjoxNjg2MTc1OTEzfQ.Ixm8GbODCzaohiJMcEFng6YDZ7S8hUypusWTyReHS94",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/doctor/searchDoctorPatients?FN=Aman",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"doctor",
+								"searchDoctorPatients"
+							],
+							"query": [
+								{
+									"key": "FN",
+									"value": "Aman"
+								},
+								{
+									"key": "LN",
+									"value": "test5",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SEARCH DOCTOR SPECIALIZATION",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"host": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{localhost}}/doctor/searchSpec?SPECIALIZATION=null",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"doctor",
+								"searchSpec"
+							],
+							"query": [
+								{
+									"key": "SPECIALIZATION",
+									"value": "null"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ASSIGN PATIENT TO DOCTOR",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"host": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "PATIENT_ID",
+									"value": "6",
+									"type": "text"
+								},
+								{
+									"key": "DOCTOR_ID",
+									"value": "25",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{localhost}}/doctor/assignPatient",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"doctor",
+								"assignPatient"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET DOCTOR PATIENTS",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"host": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJRCI6MjcsIkRvY3Rvcl9FbWFpbF9WIjoiZmFyZXNoZXNoYW1AbW9iaWNhcmUuY29tIiwicm9sZSI6IkRPQ1RPUiIsImlhdCI6MTY4NjAwNDQzOCwiZXhwIjoxNjg2MDI5NjM4fQ.bby-RlDE588RskBUpaNPVl4qWtx0Xk7NCTHYNwbrAAU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{localhost}}/doctor/getDoctorPatients/19",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"doctor",
+								"getDoctorPatients",
+								"19"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PATIENT",
+			"item": [
+				{
+					"name": "EDIT PATIENT PROFILE",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"host": true
+						}
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "STATUS",
+									"value": "Active",
+									"type": "text"
+								},
+								{
+									"key": "PATIENT_FIRST_NAME",
+									"value": "Aman",
+									"type": "text"
+								},
+								{
+									"key": "PATIENT_LAST_NAME",
+									"value": "Mohammed",
+									"type": "text"
+								},
+								{
+									"key": "PATIENT_EMAIL",
+									"value": "mohame@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "PATIENT_PASSWORD",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "PATIENT_ADDRESS",
+									"value": "Giza, Egypt",
+									"type": "text"
+								},
+								{
+									"key": "DOB",
+									"value": "1-1-2000",
+									"type": "text"
+								},
+								{
+									"key": "PATIENT_GENDER",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "PATIENT_WEIGHT",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "PATIENT_HEIGHT",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "FUID",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{localhost}}/patient/edit",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"patient",
+								"edit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Patinet Profile",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/patient/get/7",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"patient",
+								"get",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Registration",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "STATUS",
+									"value": "Active",
+									"type": "text"
+								},
+								{
+									"key": "PATIENT_FIRST_NAME",
+									"value": "Mohammed",
+									"type": "text"
+								},
+								{
+									"key": "PATIENT_LAST_NAME",
+									"value": "Sabry",
+									"type": "text"
+								},
+								{
+									"key": "PATIENT_EMAIL",
+									"value": "mohammedsabry@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "PATIENT_PASSWORD",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "PATIENT_ADDRESS",
+									"value": "Giza, Egy",
+									"type": "text"
+								},
+								{
+									"key": "DOB",
+									"value": "1999-01-01",
+									"type": "text"
+								},
+								{
+									"key": "PATIENT_GENDER",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "PATIENT_WEIGHT",
+									"value": "70",
+									"type": "text"
+								},
+								{
+									"key": "PATIENT_HEIGHT",
+									"value": "160",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{localhost}}/patient/register/",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"patient",
+								"register",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Symptom",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "7",
+									"type": "text"
+								},
+								{
+									"key": "symptom",
+									"value": "one more",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{localhost}}/patient/symptom/add",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"patient",
+								"symptom",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Doctors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/patient/getDoctors?id=6",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"patient",
+								"getDoctors"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Symptoms",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/patient/symptom/getAll?id=7",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"patient",
+								"symptom",
+								"getAll"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "7"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Symptom",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/patient/symptom/delete?id=8&symptom=first",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"patient",
+								"symptom",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "8"
+								},
+								{
+									"key": "symptom",
+									"value": "first"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add FUID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "7",
+									"type": "text"
+								},
+								{
+									"key": "fuid",
+									"value": "aaaaaaaaaaaaaaaaaaaaaaaaaa",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{localhost}}/patient/fuid/add",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"patient",
+								"fuid",
+								"add"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJRCI6MiwiUGF0aWVudF9FbWFpbF9WIjoiYW1hbm1vaGFtbWVkQGdtYWlsLmNvbSIsInJvbGUiOiJQQVRJRU5UIiwiaWF0IjoxNjg2NTY3MzQ3LCJleHAiOjE2ODY1OTI1NDd9.AtNgwSy3apFhxj8xZW4CYQ_BVdRGOfeO50xFyD9F_vE",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	]
+}
