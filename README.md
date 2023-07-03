@@ -1,8 +1,6 @@
-# MobiCare
+# ![logo](https://github.com/MohammedMoataz/MobiCare/assets/81831838/2e8b1962-d912-4a38-b01d-2265144bbf8b "MobiCare logo") MobiCare
 
 #### MobiCare healthcare system uses smart contracts to handle procedure records and stores medical records in BlockChain.
-
-![logo](https://github.com/MohammedMoataz/MobiCare/assets/81831838/2e8b1962-d912-4a38-b01d-2265144bbf8b "MobiCare logo")
 
 MobiCare is a mobile application, It facilitates the methods of consultation and follow-up between doctors and their patients.
 It includes all required data about the patient including prescriptions, medical reports, radiology images, diagnoses, treatment plans, allergies, laboratory results, etc…, the patient is allowed to check them whenever he wants and also he can give access to his doctor to get and upload his medical records.
