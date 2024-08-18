@@ -129,7 +129,7 @@ class BlockchainConnection {
       );
       print("gas: $gas");
 
-      final gasPrice = EtherAmount.inWei(BigInt.from(1330691571697097836));
+      final gasPrice = EtherAmount.inWei(BigInt.from(1330691571697097728));
       const maxGas = 265627;
 
       String txHash = await client.sendTransaction(
